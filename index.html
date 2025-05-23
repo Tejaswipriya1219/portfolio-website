@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26445eb84c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Tejaswi</span><br>Lakshmi Priya</h1>
+            </div>
+        </div>
+    </div>
+<!-------------------------About-------------------------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.jpeg" alt="Profile photo of [Your Name]">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I'm a passionate Web Designer and Full-Stack Developer who transforms ideas into engaging, responsive, and user-focused digital experiences.
+        </p>
+        <p>
+          I specialize in creating visually stunning websites and interactive web applications that combine clean UI design with solid backend functionality. With expertise in HTML, CSS, and JavaScript at the core, I build beautiful interfaces using React and ensure seamless backend integration using Node.js and MongoDB.
+        </p>
+        <p>
+          I love crafting layouts that are not only aesthetically pleasing but also intuitive, fast, and scalable. From wireframing in Figma to deploying full-stack web apps, I enjoy the entire journey of web creation—merging creative design with modern development tools to deliver impactful results.
+        </p>
+        
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Frontend</span><br>HTML5, CSS3, JavaScript (ES6+), React.js (Hooks, JSX, Components), Responsive Design, Flexbox, Web Animations</li>
+            <li><span>Backend</span><br>Node.js, Express.js, RESTful API Integration</li>
+            <li><span>Database</span><br>MongoDB, Mongoose, Basic SQL</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>To-do List</span><br>A responsive Todo List web app built with React, featuring task management, state handling, and clean UI design.</li>
+            <li><span>eCommerce Website</span><br>An eCommerce website built with React and Node.js, featuring product listings, shopping cart, user authentication, and secure payment integration.</li>
+            <li><span>Chat Application</span><br>A real-time chat application using React and Node.js with WebSocket for instant messaging and user presence indicators.</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2026</span><br>BTech (ECE) - Ongoing</li>
+            <li><span>2022</span><br>Intermediate - 87%</li>
+            <li><span>2020</span><br>SSC - 99%</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------------Services-------------------------- -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design & Development</h2>
+        <p>I create responsive, user-friendly websites with clean UI using HTML, CSS, JavaScript, and React. My designs focus on both aesthetics and functionality.</p>
+        
+      </div>
+      
+      <div>
+        <i class="fa-solid fa-paintbrush"></i>
+        <h2>UI/UX <br> Design</h2>
+        <p>I design intuitive and engaging user interfaces and experiences using tools like Figma and Adobe XD, ensuring smooth navigation and accessibility.</p>
+       
+      </div>
+      
+      <div>
+        <i class="fa-brands fa-node-js"></i>
+        <h2>Full-Stack Development</h2>
+        <p>Building scalable web applications with Node.js, Express, and MongoDB, integrating backend logic with frontend React interfaces.</p>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-------------------------MY work-------------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png" alt="Screenshot of To-Do List App">
+        <div class="layer">
+          <h3>To-Do List</h3>
+          <p>A simple and responsive To-Do List app using HTML, CSS, and vanilla JavaScript, enabling users to add, mark complete, and delete tasks with clean UI and smooth interactions.</p>
+          <a href="https://tejaswipriya1219.github.io/Todo-list/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-3.png" alt="Screenshot of Online Shopping App">
+        <div class="layer">
+          <h3>Online Shopping App</h3>
+          <p>An online shopping app built with React and Node.js, featuring product browsing, user authentication, shopping cart, order management, and secure payment integration for a seamless shopping experience.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-2.png" alt="Screenshot of Wikipedia Search Application">
+        <div class="layer">
+          <h3>Wikipedia Search Application</h3>
+          <p>A Wikipedia search application built with JavaScript and REST API integration, allowing users to search and display Wikipedia articles instantly with a clean interface.</p>
+          <a href="https://salmon-sea-0f309c100.5.azurestaticapps.net"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://github.com/Tejaswipriya1219" class="btn">See more</a>
+  </div>
+</div>
+
+<!-------------------------Contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> tejaswipriya1929@gmail.com</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tejaswi-pillala-360a6829b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg">
+
+
+                    </span>
+
+                </div>
+
+            </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Tejaswi Lakshmi Priya. All rights reserved <i class="fa-solid fa-heart"></i></p>
+            </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxucyW-wpHRWhHMPVPbSc-S2kSjOhGiB3uh8r2kmAwz7J13K4ONe0zQQsOYxUMAbYLd/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000);
+        form.reset()
+        })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
