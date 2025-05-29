@@ -6,15 +6,31 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/26445eb84c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </head>
 <body>
     <div id="header">
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -23,8 +39,10 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Designer</p>
-                <h1>Hi, I'm <span>Tejaswi</span><br>Lakshmi Priya</h1>
+                  <span id="typed-text" class="shiny-text" data-aos="fade-up" data-aos-duration="1000"></span>
+
+                  <h1>Hi, I'm <span>Tejaswi</span><br>Lakshmi Priya</h1>
+                </div>
             </div>
         </div>
     </div>
@@ -81,11 +99,137 @@
     </div>
   </div>
 </div>
+<!-------------------------skills------------------------ -->
+<section id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2 class="sub-title" data-aos="zoom-in">Skills</h2>
+    <div class="skills-container">
+    <!-- Technical Skills Box -->
+    <div class="skills-box technical-skills">
+      <h3>Technical Skills</h3>
+      
+      <div class="skill">
+        <i class="fab fa-html5"></i> HTML
+        <div class="progress">
+          <div class="bar" style="--skill-level: 90%; width: 90%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    90%
+  </div>
+      </div>
+      
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i> CSS
+        <div class="progress">
+          <div class="bar" style="--skill-level: 85%; width: 85%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    85%
+  </div>
+      </div>
+      
+      <div class="skill">
+        <i class="fab fa-js-square"></i> JavaScript
+        <div class="progress">
+          <div class="bar" style="--skill-level: 75%; width: 75%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    75%
+  </div>
+      </div>
+      
+      <div class="skill">
+        <i class="fab fa-react"></i> React
+        <div class="progress">
+          <div class="bar" style="--skill-level: 70%; width: 70%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    70%
+  </div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-python me-2"></i> Python
+        <div class="progress">
+          <div class="bar" style="--skill-level: 90%; width: 90%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    90%
+  </div>
+      </div>
+      <div class="skill">
+        <i class="fas fa-code me-2"></i> C++
+        <div class="progress">
+          <div class="bar" style="--skill-level: 85%; width: 85%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    85%
+  </div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-java me-2"></i> Java basics
+        <div class="progress">
+          <div class="bar" style="--skill-level: 85%; width: 85%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    70%
+  </div>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i> SQL
+        <div class="progress">
+          <div class="bar" style="--skill-level: 65%; width: 65%;"></div>
+        </div>
+        <div style="min-width: 40px; text-align: right; font-weight: bold;">
+    80%
+  </div>
+      </div>
+    </div>
 
+    <!-- Professional Skills Box -->
+    <div class="skills-box professional-skills">
+      <h3>Professional Skills</h3>
+      
+      <div class="circle-container">
+        <div class="circle-skill" style="--percent: 90;">
+          <div class="outer-circle" style="--percent: 90;">
+            <div class="inner-circle">90%</div>
+          </div>
+          <div class="text-skill">Creativity</div>
+        </div>
+        
+        <div class="circle-skill" style="--percent: 85;">
+          <div class="outer-circle" style="--percent: 85;">
+            <div class="inner-circle">85%</div>
+          </div>
+          <div class="text-skill">Teamwork</div>
+        </div>
+        
+        <div class="circle-skill" style="--percent: 80;">
+          <div class="outer-circle" style="--percent: 80;">
+            <div class="inner-circle">80%</div>
+          </div>
+          <div class="text-skill">Problem Solving</div>
+        </div>
+        
+        <div class="circle-skill" style="--percent: 75;">
+          <div class="outer-circle" style="--percent: 75;">
+            <div class="inner-circle">75%</div>
+          </div>
+          <div class="text-skill">Communication</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</div>
 <!-------------------------Services-------------------------- -->
 <div id="services">
   <div class="container">
-    <h1 class="sub-title">My Services</h1>
+    <h1 class="sub-title" data-aos="zoom-in">My Services</h1>
     <div class="services-list">
       
       <div>
@@ -106,7 +250,6 @@
         <i class="fa-brands fa-node-js"></i>
         <h2>Full-Stack Development</h2>
         <p>Building scalable web applications with Node.js, Express, and MongoDB, integrating backend logic with frontend React interfaces.</p>
-        
       </div>
 
     </div>
@@ -116,7 +259,7 @@
 <!-------------------------MY work-------------------------- -->
 <div id="portfolio">
   <div class="container">
-    <h1 class="sub-title">My Work</h1>
+    <h1 class="sub-title" data-aos="zoom-in">My <span>Work</span></h1>
     <div class="work-list">
       <div class="work">
         <img src="images/work-1.png" alt="Screenshot of To-Do List App">
@@ -155,7 +298,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title" data-aos="zoom-in">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> tejaswipriya1929@gmail.com</p>
                     
                     <div class="social-icons">
@@ -185,7 +328,16 @@
             <div class="copyright">
                 <p>© 2025 Tejaswi Lakshmi Priya. All rights reserved <i class="fa-solid fa-heart"></i></p>
             </div>
+<script>
+  AOS.init({ duration: 1000 });
 
+  var typed = new Typed(".typed-text", {
+      strings: ["Developer", "Designer", "Freelancer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+  });
+</script> 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -227,6 +379,47 @@
         })
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+<script>
+  AOS.init();
+  var typed = new Typed("#typed-text", {
+    strings: ["Web Designer", "Frontend Developer", "UI/UX Enthusiast"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1000,
+    loop: true
+  });
+</script>
+<script>
+  document.querySelectorAll(".circle").forEach(circle => {
+    let percent = circle.getAttribute("data-percent");
+    circle.style.setProperty("--percent", percent + "%");
+    circle.innerText = percent + "%";
+  });
+</script>
+<script>
+ 
+window.addEventListener('scroll', function() {
+  document.querySelectorAll('.bar').forEach(bar => {
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight && !bar.classList.contains('animate')) {
+      bar.classList.add('animate');
+    }
+  });
+});
+
+
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+  document.querySelectorAll('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('active');
+    }
+  });
+});
+
 </script>
 </body>
 </html>
