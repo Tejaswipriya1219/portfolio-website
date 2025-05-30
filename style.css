@@ -8,13 +8,15 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
+    background: #080808 ;
     color: #fff;
+    
 }
+
 #header{
     width:100%;
     height:100vh;
-    background-image: url(images/background-img2.png);
+    background-image: url(images/backgroud-desktop.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -95,6 +97,9 @@ nav ul li a:hover::after{
     font-size:60px;
     font-weight: 600;
     color: #fff;
+}
+.sub-title span{
+    color: #ff004f;
 }
 .tab-titles{
     display:flex;
@@ -386,6 +391,7 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background:#ff004f;
+    box-shadow: 0 0 5px #ff004f, 0 0 25px #ff004f, 0 0 50px #ff004f, 0 0 100px #ff004f,0 0 200px #ff004f;
 }
 /*--------------contact-----------*/
 .contact-left{
