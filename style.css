@@ -145,6 +145,64 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display:block;
 }
+/* Glow effect on profile image */
+.glow-img img {
+  box-shadow: 0 0 25px rgba(255, 0, 79, 0.5);
+  transition: 0.4s ease;
+}
+.glow-img img:hover {
+  box-shadow: 0 0 45px rgba(255, 0, 79, 0.9);
+  transform: scale(1.03);
+}
+
+/* Style for Education icons in list */
+#education ul li i {
+  color: #ff004f;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.edu-highlights {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.highlight-box {
+  flex: 1;
+  min-width: 180px;
+  background: #1a1919;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 0, 79, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 0, 79, 0.7);
+}
+
+.highlight-box i {
+  font-size: 28px;
+  color: #ff004f;
+  margin-bottom: 10px;
+}
+
+.highlight-box h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.highlight-box p {
+  font-size: 16px;
+  color: #ccc;
+  font-weight: bold;
+}
+
 /*-------------- Skills Container --------------*/
 .skills-container {
   display: flex;
@@ -215,67 +273,8 @@ nav ul li a:hover::after{
 .bar.animate {
   width: var(--skill-level);
 }
-/* Professional Skills */
-.circle-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  align-items: center;
-}
-.circle-skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
-}
-.circle-skill:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #ff004f;
-}
-.outer-circle {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #ff004f, #9e0000);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 0 20px #ff004f88;
-  transition: box-shadow 0.3s ease;
-}
-.inner-circle {
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-  background: #1a1919;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 700;
-  box-shadow: inset 0 0 12px #000;
-  position: relative;
-  z-index: 2;
-}
-/* Animated circular progress using SVG or conic-gradient */
-.outer-circle[data-percent] {
-  background: conic-gradient(
-    #ff004f calc(var(--percent) * 1%), 
-    #3a3a3a 0
-  );
-}
-.text-skill{
-    color:white;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+
+
 /*--------------services-----------*/
 #services{
     padding: 30px 0;
@@ -314,6 +313,38 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+.services-list .skills-used {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-left: 4px solid #ff004f;
+  border-radius: 4px;
+}
+.skill-badges {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badges span {
+  background-color: #1e1e1e;
+  border: 1px solid #ff004f;
+  color: #ff004f;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.skill-badges span:hover {
+  background-color: #b88a98;
+  color: #e6d9d9;
+  transform: scale(1.05);
+}
+
 /*--------------portfolio-----------*/
 #portfolio{
     padding: 50px 0;
@@ -485,6 +516,69 @@ form .btn2:hover {
     opacity: 1;
     transform: translateY(0);
 }
+/* Enhancements for form glow and animation */
+.contact-right form {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 79, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-right form:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 79, 0.5);
+}
+
+form input:focus, form textarea:focus {
+    background: #2c2c2c;
+    outline: none;
+    border: 1px solid #ff004f;
+    box-shadow: 0 0 10px rgba(255, 0, 79, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+}
+
+/* Location Icon Style */
+.contact-left p i.fa-location-dot {
+    color: #ff004f;
+}
+.social-icons a:hover {
+    color: #ff004f;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #ff004f;
+}
+.contact-right form {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 79, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-right form:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 79, 0.5);
+}
+
+form input:focus, form textarea:focus {
+    background: #2c2c2c;
+    outline: none;
+    border: 1px solid #ff004f;
+    box-shadow: 0 0 10px rgba(255, 0, 79, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Extra responsiveness if needed */
+@media (max-width: 768px) {
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+}
+
+
 
 /*--------------css for small screens----------*/
 
@@ -495,7 +589,7 @@ nav i.fas{
 /* Mobile View: max-width 600px */
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url(images/small\ screen\ 2.png);
     }
     .header-text{
         margin-top:50%;
